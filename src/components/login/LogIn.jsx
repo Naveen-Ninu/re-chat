@@ -22,7 +22,7 @@ const LogIn = () => {
     <>
       <section
         id="login-page"
-        className={`bg-[#243151] min-h-screen  justify-center items-center relative z-10 flex `}>
+        className={`bg-[#243151] min-h-screen  justify-center items-center relative z-10 flex py-10`}>
         <div className="container ">
           <div className=" signup-container pb-20">
             <h2>Sign In</h2>
@@ -63,18 +63,20 @@ const LogIn = () => {
                   type={handlePassReveal ? "text" : "password"}
                   value={inputFilds.password}
                 />
-                <span
-                  onClick={() => sethandlePassReveal(!handlePassReveal)}
-                  className=" absolute right-0 top-1/2 -translate-y-1/2 p-1 hover:bg-[#6ea4ef2d] transition-all duration-300 rounded-[4px]">
-                  <span className="relative">
-                    {" "}
-                    <span
-                      className={` absolute top-1/2 inline-block h-[2px] w-full bg-[#718096] rotate-[40deg] -translate-y-1/2 transition-all duration-100 ${
-                        handlePassReveal ? " opacity-100" : "opacity-0"
-                      }`}></span>{" "}
-                    {svgEye}
+                {inputFilds.password && (
+                  <span
+                    onClick={() => sethandlePassReveal(!handlePassReveal)}
+                    className=" absolute right-0 top-1/2 -translate-y-1/2 p-1 hover:bg-[#6ea4ef2d] transition-all duration-300 rounded-[4px]">
+                    <span className="relative">
+                      {" "}
+                      <span
+                        className={` absolute top-1/2 inline-block h-[2px] w-full bg-[#718096] rotate-[40deg] -translate-y-1/2 transition-all duration-100 ${
+                          handlePassReveal ? " opacity-100" : "opacity-0"
+                        }`}></span>{" "}
+                      {svgEye}
+                    </span>
                   </span>
-                </span>
+                )}
               </div>
               <div className="flex justify-between w-full">
                 {" "}
