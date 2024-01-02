@@ -125,7 +125,7 @@ const SignUp = () => {
               </svg>
 
               <svg
-                className="cursor-pointer w-[35px] md:w-[50px]"
+                className=" cursor-not-allowed w-[35px] md:w-[50px]"
                 width="50"
                 height="50"
                 viewBox="0 0 50 50"
