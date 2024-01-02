@@ -366,7 +366,9 @@ input:hover {
 .chat-list-container input {
   @apply min-h-[40px] pl-[38px] pr-3 py-2 placeholder:text-[#929FB1] placeholder:font-inter placeholder:font-normal placeholder:leading-[150%] placeholder:text-[15px] text-[#6ea4ef] font-inter font-normal leading-[150%] text-[15px] rounded-[12px] outline-none border border-[#E1E5EA];
 }
-
+.remamber_me_forgot_pass {
+  @apply font-inter text-white text-base font-normal leading-[243%];
+}
 .chatAccesBtn {
   padding: 6px 17px 4px 7px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
