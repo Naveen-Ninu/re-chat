@@ -4,12 +4,14 @@ import LogIn from "./components/login/LogIn";
 import ResetPass from "./components/login/ResetPass";
 import { Route, Routes } from "react-router-dom";
 import SignUp from "./components/login/SignUp";
+import Pract from "./common/Pract";
 
 function App() {
   return (
     <div className="App">
       {/* <LogIn /> */}
       {/* <ResetPass /> */}
+      <Pract />
       <Routes>
         <Route path="/" element={<SignUp />} />
         <Route path="/Signup" element={<SignUp />} />

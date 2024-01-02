@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function FirebaseProvider() {
-  return (
-    <div>FirebaseProvider</div>
-  )
+  return <div>FirebaseProvider</div>;
 }
 
-export default FirebaseProvider
+export default FirebaseProvider;
